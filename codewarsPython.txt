@@ -1,0 +1,16 @@
+def create_phone_number(n):
+    #your code here
+    firstchars = ""
+    middlechars = ""
+    endchars = ""
+    
+    for i in range(len(n)):
+        if 0 <= i < 3:
+            firstchars = firstchars+str(n[i])
+        elif 3 <= i < 6:
+            middlechars = middlechars+str(n[i])
+        else:
+            endchars = endchars+str(n[i])
+        print(endchars)
+    return "("+firstchars+") "+middlechars+"-"+endchars
+    
